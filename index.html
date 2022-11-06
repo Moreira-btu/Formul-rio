@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+        #formulario{
+            text-align: center;
+            margin: auto;
+        }
+        input{
+            height: 2em;
+        }
+        #sexo{
+            display:inline-flex;
+            align-items: center;
+            padding: 20px 100px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="formulario" >
+        <h1>Formulário</h1>
+        <form action="index.html" method="post" >
+            <fieldset id="usuario"><legend><h2>Identificação do Usuário</h2> </legend>
+               <td><h3><label for="tnome"> Nome: </label><input type="text" name="tnome" id="tnome" size="40" placeholder="Nome Completo"></h3></td> 
+               <td><h3><label for="tsenha"> Senha:</label> <input type="password" name="tsenha" id="tsenha" size="10" placeholder="até 10 digitos"></h3></td>
+               <td><h3><label for="temail"> E-mail </label><input type="email" name="temail" id="temail" size="30" placeholder="exemplo@exemplo.com.br"></h3></td>
+           </fieldset>
+           <fieldset id="sexo"><legend><h2>Sexo</h2></legend>
+            <input type="radio" nome="tsexo "
+            id="sex-mas"checked><h3> <label for="sex-mas"></label>Masculino</h3></label>
+            <input type="radio" name="tsexo" id="sex-fem"><label for="sex-fem"><h3>Feminino</h3></label>
+
+        
+        </fieldset>
+            <fieldset id="nasc"><legend><h2><label for="tdata"></label>Data de Nascimento</h2></legend></label>
+                <input type="date" nome="tdata" id="tdata">
+            </fieldset>
+            <fieldset id="endereco">
+                <legend><h2>Endereço do Usuário</h2></legend>
+                <h2><label for="trua" > Logradouro :</label></h2><input size="40" maxlength="80" placeholder="Rua , Av , Travessa , etc.." type="text" nome="trua" id="trua">
+                <h2><label for="tnum"> Número :</label></h2><input type="number" min="0" max="9999" name="tnum" id="tnum">
+                <h2><label for=""> Bairro : </h2></label><input type="text" size="40" placeholder="    Jd. Exemplo" id="tbairro" name="tbairro" >
+                <h2><label for="">Cidade :</label></h2><input type="text" nome="tcidade" id="tcidade" placeholder="Seu Municipio" list="cidade" >
+                <datalist id="cidade">
+                <option value="São Paulo"></option>
+                <option value="Botucatu"></option>
+                <option value="São Manuel"></option>
+                <option value="Bauru"></option>
+                <option value="Avaré"></option>
+                <option value="Anhembi"></option>
+                <option value="Bofete"></option>
+                </datalist>
+
+                <h2><label for="">Estado :</label></h2><input type="text" nome="testado" id="testado" placeholder="Seu Estado" list="estado" >
+                <datalist id="estado">
+                <option value="São Paulo"></option>
+                <option value="Rio de Janeiro"></option>
+                <option value="Parána"></option>
+                <option value="Rio Grande do Sul"></option>
+                
+                </datalist>
+
+                <h2><label for="">País :</label></h2><input type="text" nome="tpais" id="tpais" placeholder="Seu Estado" list="pais" >
+                <datalist id="pais">
+                <option value="Brasil"></option>
+                <option value="Argertina"></option>
+                <option value="Paraguai"></option>
+                <option value="Estados Unidos"></option>
+                
+                </datalist>
+
+
+            </fieldset>
+            
+
+        </form>
+
+
+    </div>
+    
+</body>
+</html>
